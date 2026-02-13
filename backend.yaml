@@ -37,4 +37,4 @@ spec:
       app: backendapp
    ports:
      - port: 8080
-       containerPort: 8080         
+       targetPort: 8080         
