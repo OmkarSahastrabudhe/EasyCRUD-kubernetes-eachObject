@@ -1,0 +1,19 @@
+apiVersion:  networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: easyingress
+  labels:
+    app: easyingress
+spec: 
+   ingressClassName: nginx
+   rules:
+     - host: ac65515bc59fb480eae0d7002494b364-606312776.ap-south-1.elb.amazonaws.com 
+       http:
+         paths:
+          - pathType: Prefix
+            path: "/api"
+            backend:  
+               service:
+                  name: backendservice
+                  port:  
+                    number: 8080
