@@ -1,0 +1,1 @@
+VITE_API_URL = "http://ac65515bc59fb480eae0d7002494b364-606312776.ap-south-1.elb.amazonaws.com:8080/api"
