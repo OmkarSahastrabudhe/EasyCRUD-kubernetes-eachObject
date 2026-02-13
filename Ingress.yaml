@@ -17,3 +17,9 @@ spec:
                   name: backendservice
                   port:  
                     number: 8080
+          - pathType: Prefix
+            path: "/"
+            backend:
+               service:
+                 name: frontendservice
+                 number: 80       
