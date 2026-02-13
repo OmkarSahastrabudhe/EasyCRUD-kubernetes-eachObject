@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: omkarsahastrabudhe/frontend:v2
+        image: omkarsahastrabudhe/frontend:v4
         resources:
           requests: 
              cpu: "128m"
